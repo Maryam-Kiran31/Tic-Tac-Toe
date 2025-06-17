@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f5f7; /* Soft gray */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #42253b;
+    background-image: url("tik.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+.container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Game board */
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+    background-color: #fff;
+    padding: 1vmin;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Individual box */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    color: #753DA9; /* Deep plum */
+    background-color: #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.box:hover {
+    background-color: #f4f5f7;
+    transform: translateY(-2px);
+}
+
+/* Reset Game Button */
+#reset-game {
+    padding: 1rem;
+    font-size: 3vmin;
+    background-color: #42253b;
+    color:#e9ecef;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#reset-game:hover {
+    background-color: #8a7885;
+    transform: translateY(-2px);
+}
+
+/* New Game Button */
+#new-game {
+    padding: 1rem;
+    font-size: 3vmin;
+    background-color: #42253b;
+    color:#e9ecef;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#new-game:hover {
+    background-color: #8a7885;
+    transform: translateY(-2px);
+}
+
+/* Game result message */
+#msg {
+    color: #42253b;
+    font-size: 4vmin;
+    background-color: #42253b;
+    color:#e9ecef;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Message container */
+.msg-container {
+    height: 40vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
